@@ -39,8 +39,9 @@ function getData() {
                         like = message_data["like"];
                         S1 = "<h4>" + names + "<img class='user_tick' src='tick.png'></h4>";
                         S2 = "<h4 class = 'message_h4'>" + message + "</h4>";
-                        S3 = "<button class = 'btn btn-warning' id = " + firebase_message_id + "value=" + like + "onclick = 'like(this.id)'>";
-                        S4 = "<span class = 'glyphicon glyphicon-thumbs-up'> Like: " + like + "</span></button> <hr>";
+                       S3 = "<button class='btn btn-warning' id=" + firebase_message_id + " value=" + like + " onclick= 'like(this.id)'>";
+        S4 = "<span class='glyphicon glyphicon-thumbs-up'>  Like :  " + like + "</span></button><hr>";
+
 
                         Orange = S1 + S2 + S3 + S4;
                         document.getElementById("Message").innerHTML += Orange;
